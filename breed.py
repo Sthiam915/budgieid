@@ -211,7 +211,7 @@ class Bird:
     def __eq__(self, other):
         if not type(other) == Bird:
             raise TypeError("Can only compare Bird with Bird")
-
+        # sex and all mutations must be equal
         return self.color == other.color and \
             self.sex == other.sex and self.dark_factor == other.dark_factor and \
             self.violet_factor == other.violet_factor and self.grey_factor == other.grey_factor and \
