@@ -7,14 +7,17 @@
 #image-container {
   width: 50%;
   position:absolute;
-  height: 40%;
-  top: 40%;
+  height: 70%;
+  top: 15%;
   left: 25%;
   background-color: lightgray;
   color: rgb(20, 20, 20);
   border: 2px solid rgb(220,220,  220);
   border-radius: 4px;
-
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position-x: center;
+  background-position-y: center;
 
 }
 #upload-label {

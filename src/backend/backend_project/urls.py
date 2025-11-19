@@ -21,5 +21,6 @@ from backend_app import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('receive_image/', views.receive_image, name='receive_image')
+    path('receive_image/', views.receive_image, name='receive_image'),
+    path('draw_box/', views.draw_box, name='draw_box'),
 ]
