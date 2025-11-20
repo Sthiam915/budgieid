@@ -1,49 +1,51 @@
+/* Center the whole app and set spacing */
 #root {
-  max-width: 1280px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
-#image-container {
-  width: 50%;
-  position:absolute;
-  height: 70%;
-  top: 15%;
-  left: 25%;
-  background-color: lightgray;
-  color: rgb(20, 20, 20);
-  border: 2px solid rgb(220,220,  220);
-  border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat; 
-  background-position-x: center;
-  background-position-y: center;
 
-}
-#upload-label {
-  position:absolute;
-  top:35%;
-  width:70%;
-  height:30%;
-  
-  left:15%;
-  margin-left:0;
-  border-style: dashed;
-  border-color:rgb(150,150,150);
+/* The upload container */
+#image-container {
+  width: 100%;
+  height: 350px;
+  background-color: #d3d3d3;
+  border: 2px solid #ccc;
   border-radius: 8px;
-  font-size: 1.5em;
+
+  /* IMPORTANT: no absolute positioning */
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+/* Upload label (the dashed box) */
+#upload-label {
+  border: 2px dashed #888;
+  border-radius: 10px;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  /* No more absolute positioning! */
+  position: relative;
+}
+
+/* Hide the actual file input */
 #file-input {
   display: none;
 }
+
+/* General input style if needed */
 .input {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
   opacity: 0;
   cursor: pointer;
-  border: none;
-  margin: 0;
-  padding: 0;
 }
